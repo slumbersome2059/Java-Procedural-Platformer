@@ -16,7 +16,7 @@ public class SokobanLevel extends Level{
         super("Sokoban Level");
         Random rand = new Random();
         int randNum = rand.nextInt(numOfLevels) + 1;
-        sokLevelPath = "./coursework/assets/sokobanLevels";
+        sokLevelPath = "./assets/sokobanLevels";
         //sokLevelPath = "C://Users//a.nachiappan23//courseworkRepo//coursework//coursework//assets//sokobanLevels";
         //"C:/Users/User/CourseworkRepo/courseworkAN/coursework/assets/sokobanLevels"
         //"C://Users//a.nachiappan23//courseworkRepo//coursework//coursework//assets//sokobanLevels"

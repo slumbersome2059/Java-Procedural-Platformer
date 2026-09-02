@@ -12,11 +12,9 @@ import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import com.badlogic.gdx.maps.tiled.TiledMap;
 import com.badlogic.gdx.maps.tiled.TmxMapLoader;
 import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
-import com.badlogic.gdx.utils.ScreenUtils;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 
-import py4j.GatewayServer;
 
 
 public class insideLevel implements Screen{
@@ -67,15 +65,11 @@ public class insideLevel implements Screen{
         font = new BitmapFont();
         font.getData().setScale(2);
         font.getRegion().getTexture().setFilter(Texture.TextureFilter.Linear, Texture.TextureFilter.Linear);
-        //temporary code that should be removed after sokoban solver trained
-        GatewayServer gatewayServer = new GatewayServer(this);
-        gatewayServer.start();
-        System.out.println("Server started");
         newSLLevel = false;
     }
     @Override
     public void show() {
-        mapPath = "coursework/assets/coinCollectorMap.tmx";
+        mapPath = "assets/coinCollectorMap.tmx";
         mapLoader = new TmxMapLoader();
         tiledMap = mapLoader.load(mapPath);
         shapeRenderer = new ShapeRenderer();

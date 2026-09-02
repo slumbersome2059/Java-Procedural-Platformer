@@ -78,7 +78,7 @@ public class Map implements Screen {
         boxes = new ArrayList<>();
         levels = new ArrayList<>();
         sprites = new ArrayList<>();
-        mapPath = "./coursework/assets/coinCollectorMap.tmx";//relative file paths can maybe done with GDX.files.internal(Do research)
+        mapPath = "./assets/coinCollectorMap.tmx";//relative file paths can maybe done with GDX.files.internal(Do research)
         //mapPath = "C://Users//a.nachiappan23//courseworkRepo//coursework//coursework//assets//coinCollectorMap.tmx";
         points = new ArrayList<>();
         rand = new Random();
